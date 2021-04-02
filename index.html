@@ -1,70 +1,150 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="inicio.css" />
-    <title>Stephanie page</title>
-  </head>
-  <body>
-  <div id="cabecera">
-    <img src="objetos/logo.gif" alt="Logo de la página" width="15%" />
-    <h1>Hey Bonita.!!!</h1>	
-    <h2>Aprendiendo a construir un sitio Web</h2>
-  </div>
-  <div id="navegacion">
-    <div class="menu"><a href="index.html">Inicio</a></div>
-    <div class="menu"><a href="listas.html">Listas</a></div>
-    <div class="menu"><a href="tablas.html">Tablas</a></div>
-    <div class="menu"><a href="formulario.html">Formulario</a></div> 
-		<div class="vacio"></div>
- </div>
-  <div id="texto">
-    <p>Hola, estoy aprendiendo a hacer Webs y este es mi primer párrafo, 
-       no es muy largo, pero es un párrafo.</p>
-    <p>Este ya es mi segundo párrafo. Para construir un sitio web como éste, 
-       hay que usar el lenguaje HTML. El HTML es un lenguaje de etiquetas.
-       Con las etiquetas indicamos qué tipo de contenido insertamos en la página.</p>
-  </div>
-  <div id="enlaces">
-    <h3>Los enlaces</h3>
-    <p>Estoy aprendiendo a poner enlaces en mi página. Aquí he puesto unos enlaces 
-       a unos sitios muy populares.</p>
-    <p>Pulsa en los siguientes enlaces para ir a las siguientes páginas.</p>
-    <div class="mienlace">
-    <p><a href="http://es.wikipedia.org" target="_blank">
-       <img src="objetos/wikipedia.jpg" alt="Logo Wikipedia" border="0" height="200" />
-    </a></p>
-    <p><a href="http://es.wikipedia.org" target="_blank">Consultar Wikipedia</a></p>
-    </div>
-    <div class="mienlace">
-    <p><a href="http://www.youtube.com"  target="_blank">
-       <img src="objetos/youtube.jpg" alt="Logo YouTube" border="0" height="200" />
-    </a></p>
-    <p><a href="https://www.youtube.com" target="_blank">Videos en You Tube</a></p>
-    </div>
-    <div class="mienlace">
-    <p><a href="http://elpais.com" target="_blank">
-       <img src="objetos/elpais.jpg" alt="Logo El_Pais" border="0" height="200" />
-    </a></p>
-    <p><a href="http://elpais.com" target="_blank">Noticias con el País</a></p>
-    </div>
-    <div class="vacio"></div>
-  </div>
-  <div id="pie">
-    <div class="col_pie">
-      <h4>Sobre este sitio</h4>
-      <p>Propiedad de : Nombre Apellido</p>
-      <p>Webmaster: Nombre Apellido</p>
-    </div>
-    <div class="col_pie">
-      <h4>Contactos</h4>
-      <p>Email : miemail@servidor.com</p>
-      <p>Teléfono: 900-00-00-00</p>
-    </div>
-    <div class="col_pie">
-      <h4>En las redes</h4>
-      <p>Facebook : (dirección de Facebook)</p>
-      <p>Twitter: (dirección de Twitter)</p>
-    </div>
-    <div class="vacio"></div>
-  </div>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>  </title>
+<style>
+/**************Base styles***********/
+*{
+   box-sizing: border-box;
+   font-family: Arial, Helvica, sans-serif;
+}
+h1{
+	text-align: center;
+}
+
+#p1{
+	position: relative;
+	bottom:  17px;
+	right: 0px;
+	background-color: pink;
+	padding: 7px;
+    float: right;
+	border: 2px solid black;
+	width: 100px;
+	text-align: center;
+}
+#p2{
+	position: relative;
+	padding: 7px;
+	bottom:  17px;
+	right: 0px;
+	background-color: red;
+	float: right;
+	border: 2px solid black;
+	width: 100px;
+	text-align: center;
+
+
+}
+#p3{
+	position: relative;
+	padding: 7px;
+	bottom:  17px;
+	right: 0px;
+	background-color:#d4d642;
+	float: right;
+	border: 2px solid black;
+	width: 100px;
+	text-align: center;
+}
+.row{
+	width: 100;
+}
+
+/************Desktop***************/
+@media(min-width:992px){
+.col-lg-1, .col-lg-2, .col-lg-3
+{
+border: 2px solid black;
+float: left;
+background-color: #d3d3d3;
+}
+.col-lg-1{
+	width: 33.33%;
+}
+.col-lg-2{
+	width: 33.33%;
+}
+.col-lg-3{
+	width: 33.33%;
+	
+}
+}
+
+/************Tablet***************/
+@media(min-width:768px) and (max-width:991px){
+.col-md-1,.col-md-2,.col-md-3
+{
+float: left;
+border: 2px solid black;
+background-color: #d3d3d3;
+
+}
+.col-md-1{
+	width: 50%;
+
+}
+.col-md-2{
+	width: 50%;
+}
+.col-md-3{
+	width: 100%;
+}
+}
+/************Mobile***************/
+@media(max-width: 767px){
+	.col-sm-1,.col-sm-2,.col-sm-3
+{
+float: left;
+border: 2px solid black;
+background-color: #d3d3d3;
+}
+.col-sm-1{
+	width: 100%;
+}
+.col-sm-2{
+	width: 100%;
+}
+.col-sm-3{
+	width: 100%;
+}
+}
+section{
+	padding: 0px 10px 10px 10px;
+	clear: right;
+}
+
+</style>
+</head>
+<body>
+	<h1> Our Menu</h1>
+      <div class="row">
+		<div class="col-lg-1 col-md-2 col-sm-1" style="border-color:white; border-width: 10px;">
+			<div class="col-md-3 col-md-1 col-sm-1 " style="border: 2px solid black;"> 
+				<p id="p1">Chicken</p>
+				   <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis mauris augue, in molestie libero aliquet vitae. Duis ornare sit amet magna a elementum. Cras lobortis tincidunt mauris, ut gravida neque dapibus vel.</section>
+			 </div>
+		</div>
+		<div class="col-lg-1 col-md-2 col-sm-1" style="border-color:white; border-width: 10px;">
+			 <div class="col-md-3 col-md-2 col-sm-2 " style="border: 2px solid black;"> 
+				<p id="p2">Beef</p>
+				  <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis mauris augue, in molestie libero aliquet vitae. Duis ornare sit amet magna a elementum. Cras lobortis tincidunt mauris, ut gravida neque dapibus vel.</section>
+			 </div>
+		</div>
+		<div class="col-lg-1 col-md-3 col-sm-1" style="border-color:white; border-width: 10px;">
+			<div class="col-md-3 col-md-3 col-sm-3 " style="border: 2px solid black;">
+				<p id="p3">Sushi</p>
+				  <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis mauris augue, in molestie libero aliquet vitae. Duis ornare sit amet magna a elementum. Cras lobortis tincidunt mauris, ut gravida neque dapibus vel.</section>
+
+			 
+		  </div>
+		</div>
+     	 
+         
+   </div>
+
+</body>
+
 </html>
